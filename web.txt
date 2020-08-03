@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Banking</servlet-name>
+  	<display-name>Banking</display-name>
+  	<description></description>
+  	<servlet-class>transaction.Banking</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>online_banking</servlet-name>
+  	<display-name>online_banking</display-name>
+  	<description></description>
+  	<servlet-class>transaction.online_banking</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>transaction_history</servlet-name>
+  	<display-name>transaction_history</display-name>
+  	<description></description>
+  	<servlet-class>transaction.transaction_history</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Banking</servlet-name>
+  	<url-pattern>/Banking</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>online_banking</servlet-name>
+  	<url-pattern>/online_banking</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>transaction_history</servlet-name>
+  	<url-pattern>/transaction_history</url-pattern>
+  </servlet-mapping>
+</web-app>
